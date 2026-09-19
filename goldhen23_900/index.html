@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 style="margin-bottom: 0;">Xiao Xploithost 600-1300</h1>
+    <p style="margin-top: 0; border-bottom: 2px solid black;">with Goldhen2.3 9.00</p>
+
+    <p>Flashes the Xiao ESP32-C3 board, well actually should do any ESP32-C3 board really, with a PS4 offline web exploit host. Supports firmwares from 6.00 to 13.00.</p>
+    <p>I have not tested the exploit used for firmwares 11.50 to 13.00. Between 6.00 and 11.20 will the CSS FontFace method while 11.50 to 13.00 uses the files from raw-game zrm or whatever that was.</p>
+    
+        <div id="main" style="display: none;">
+
+            <script type="module" src="https://unpkg.com/esp-web-tools@7.1.0/dist/web/install-button.js?module"></script>
+            
+            <esp-web-install-button id="installButton" style="display: flex; position: relative; margin-bottom: 10px;" manifest="bins/manifest.json"></esp-web-install-button>
+    
+            <span>NOTE: Make sure to close anything using your devices com port (e.g. Serial monitor)</span>
+        </div>
+
+    <div id="notSupported" style="display: none;">
+        Your browser does not support the Web Serial API. Try Chrome
+    </div>
+   
+    <script>
+        if(navigator.serial){
+            document.getElementById("notSupported").style.display = 'none';
+            document.getElementById("main").style.display = 'block';
+            
+        } else {
+            document.getElementById("notSupported").style.display = 'block';
+            document.getElementById("main").style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

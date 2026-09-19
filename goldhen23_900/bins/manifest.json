@@ -1,0 +1,28 @@
+{
+    "name": "Xiao_Xploithost_600-1300",
+    "builds": [
+        {
+            "chipFamily": "ESP32-C3",
+            "new_install_prompt_erase": true,
+            "parts": [
+                {
+                    "path": "Xiao_Xploithost_600-1300.ino.bootloader.bin",
+                    "offset": 0
+                },
+                {
+                    "path": "Xiao_Xploithost_600-1300.ino.partitions.bin",
+                    "offset": 32768
+                },
+                {
+                    "path": "boot_app0.bin",
+                    "offset": 57344
+                },
+                {
+                    "path": "Xiao_Xploithost_600-1300.ino.bin",
+                    "offset": 65536
+                }
+            ]
+        }
+    ]
+    
+}
