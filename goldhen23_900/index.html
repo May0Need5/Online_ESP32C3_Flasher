@@ -6,7 +6,7 @@
     <p style="margin-top: 0; border-bottom: 2px solid black;">with Goldhen2.3 9.00</p>
 
     <p>Flashes the Xiao ESP32-C3 board, well actually should do any ESP32-C3 board really, with a PS4 offline web exploit host. Supports firmwares from 6.00 to 13.00.</p>
-    <p>I have not tested the exploit used for firmwares 11.50 to 13.00. Between 6.00 and 11.20 will the CSS FontFace method while 11.50 to 13.00 uses the files from raw-game zrm or whatever that was.</p>
+    <p>I have not tested the exploit used for firmwares 11.50 to 13.00. Between 6.00 and 11.20 will use the CSS FontFace method while 11.50 to 13.00 uses the files from raw-game zrm or whatever that was.</p>
     
         <div id="main" style="display: none;">
 
@@ -15,6 +15,16 @@
             <esp-web-install-button id="installButton" style="display: flex; position: relative; margin-bottom: 10px;" manifest="bins/manifest.json"></esp-web-install-button>
     
             <span>NOTE: Make sure to close anything using your devices com port (e.g. Serial monitor)</span>
+        </div>
+        <div>
+            <ul>
+            <li>ssid = "Xiao_Xploithost"</li>
+            <li>password = "password"</li>
+            <li>local_IP(192, 168, 1, 1)</li>
+            <li>gateway(192, 168, 1, 1)</li>
+            <li>subnet(255, 255, 255, 0)</li>
+            </ul>
+            <p>Will auto-direct based on firmware detection.</p>
         </div>
 
     <div id="notSupported" style="display: none;">
